@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-Dmitrishin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="content__location location">
+                <label for="location-input" class="location__label">Место или название отеля</label>
+                <input type="text" class="location__input" id="location-input" placeholder="Введите здесь место" maxlength="20">
+            </div>
+            <div class="content__calendar calendar">
+                <div class="calendar__wrap">
+                    <div class="calendar__checkin">
+                        <label for="calendar__input" class="calendar__label-input">Заезд</label>
+                        <input type="text" id="calendar__input-in" class="calendar__input-in" value="07 февраля">
+                    </div>
+                    <div class="calendar__checkout">
+                        <label for="calendar__input" class="calendar__label-out">Выезд</label>
+                        <input type="text" id="calendar__input-out" class="calendar__input-out" value="22 февраля">
+                    </div>
+                </div>
+            </div>
+            <div class="content__sum sum">
+                <div class="sum__inner">
+                    <div class="sum__wrap">
+                        <label class="sum__label sum__label-first" for="sum__room-input-1">Номера</label>
+                        <input class="sum__input" id="sum__room-input-1" type="text" value="1" min="0" max="99" maxlength="2">
+                        <span class="sum__plus"></span>
+                        <span class="sum__minus"></span>
+                    </div>
+                    <div class="sum__wrap">
+                        <label class="sum__label" for="sum__room-input-2">Взрослые</label>
+                        <input class="sum__input" id="sum__room-input-2" type="text" value="1" min="0" max="99" maxlength="2">
+                        <span class="sum__plus"></span>
+                        <span class="sum__minus"></span>
+                    </div>
+                    <div class="sum__wrap">
+                        <label class="sum__label" for="sum__room-input-3">Дети</label>
+                        <input class="sum__input" id="sum__room-input-3" type="text" value="0" min="0" max="99" maxlength="2">
+                        <span class="sum__plus"></span>
+                        <span class="sum__minus"></span>
+                  </div>
+                </div>      
+            </div> 
+            <div class="content__accept accept">
+                <div class="accept__addition-wrapper">
+                  <button class="accept__addition"></button>
+                  <img class="accept__addition-img" src="assets/img/plus.png" alt="plus" height="15px" width="15px">
+                </div>
+                <button class="accept__search">Найти</button>
+            </div> 
+         
+        </div>
+      </div>
+    
+      <script src="assets/js/app.js"></script>
+</body>
+</html>
